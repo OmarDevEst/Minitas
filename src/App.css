@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+      text-align: center;
+      background-color: #1b1717;
+      Color:white;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cellStyle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 800;
+    border: 1px solid white;
   }
-  to {
-    transform: rotate(360deg);
+
+  #gameOverImage {
+    opacity: 100;
+    z-index: 4;
+    height: 70%;
+    max-width: 100%;
+    margin: 0 50px;
+    background: url("https://miro.medium.com/max/2000/1*qxjT5Nx9prEqL4un2WdX0g.gif")
+    0px 80px no-repeat;
+    background-size: 50rem;
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .tryAgain {
+    cursor: pointer;
+    margin: 0 50px;
+    border-radius: 7px;
+    background: gray;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+
+  }
+
+@media(max-width: 400px){
+  #gameOverImage{
+    height:60%;
+    background:white;
+    opacity: 0;
+
+  }
+  .tryAgain{
+    padding: 5px;
+  }
+  .cellStyle{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
   }
 }
